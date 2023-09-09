@@ -19,7 +19,7 @@ function Card() {
             <div className="mentors_btn">
               <div className="mentors">
                 <div className="mentors_image">
-                  <img src={Mentor} alt="Mentors image" />
+                  <img src={Mentors} alt="Mentors image" />
                 </div>
                 <div className="mentor_info">
                   <span className="name">Менторы</span>
