@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  border-top: 5px solid #7928fe;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.jutify-start {
+  justify-content: start;
+}
+
+.jutify-center {
+  justify-content: center;
+}
+
+.jutify-end {
+  justify-content: end;
+}
+
+.jutify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 16px;
+}
+
+.border {
+  border: 1px solid #7928fe;
+}
+
+.r-12 {
+  border-radius: 12px;
+}
+
+.r-40 {
+  border-radius: 40px;
+}
+
+.ml-16 {
+  margin: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.ml-32 {
+  margin: 32px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.bg-purple {
+  background-color: #7928fe;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header {
+  padding: 15px 0;
+  color: white;
+}
+.header .header_left .logo {
+  width: 98px;
+}
+.header .header_left ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+.header .header_left ul li a {
+  color: #0F1014;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .header_left ul li a.active, .header .header_left ul li a:hover {
+  color: #7928FE;
+}
+.header .header_right ul {
+  list-style: none;
+}
+.header .header_right ul li {
+  text-align: center;
+}
+.header .header_right ul li a {
+  margin: 1px;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #141920;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+.header .header_right ul li a.active {
+  color: #fff;
+  background-color: #141920;
+  border-radius: 100%;
+  border: 1px solid #141920;
+}
+.header .header_right ul li a:hover {
+  background-color: #fff;
+  color: #141920;
+  border: 1px solid #141920;
+  border-radius: 100%;
+}
+.header .header_right a {
+  margin-left: 30px;
+  font-weight: 500;
+  border: 1px;
+  transition: 0.4s ease;
+}
+.header .header_right a:hover {
+  background-color: #833ff1;
+  border: 1px soli #fff;
+}
+
+.hero .hero_info {
+  color: #0f1014;
+}
+.hero .hero_info .info_title {
+  font-size: 46px;
+  font-weight: 900;
+}
+.hero .hero_info .info_title span {
+  color: #7928fe;
+}
+.hero .hero_info .info_description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.hero .hero_info .info_buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.hero .hero_info .info_buttons a {
+  padding: 16px 28px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 40px;
+  border: 1px solid #7928fe;
+  transition: 0.3s ease;
+}
+.hero .hero_info .info_buttons a:nth-child(2) {
+  margin-left: 16px;
+}
+.hero .hero_info .info_buttons a.active, .hero .hero_info .info_buttons a:hover {
+  background-color: #7928fe;
+  color: #fff;
+}
+.hero .hero_info .info_buttons a.active:hover {
+  background-color: #fff;
+  color: #7928fe;
+}
+.hero .hero_image {
+  height: 530px;
+}
+.hero .hero_image.img {
+  width: 100%;
+}
+.hero .hero_counter {
+  margin-top: -60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .hero_counter .item_counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px;
+  -o-border-image: url("../assets/images/divider.svg");
+     border-image: url("../assets/images/divider.svg");
+}
+.hero .hero_counter .item_counter .count {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.hero .hero_counter .item_counter .name {
+  color: #7b7f94;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.train .training_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.train .training_top .title_all {
+  display: flex;
+  align-items: center;
+}
+.train .training_top .title_all .title {
+  color: #0f1014;
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.train .training_top .title_all .all {
+  color: #7928fe;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 32px;
+}
+.train .training_top .title_all .all:hover {
+  color: #0f1014;
+}
+.train .training_top .next_pre {
+  display: flex;
+  gap: 16px;
+}
+
+.training_cards {
+  display: flex;
+  gap: 25px;
+  padding: 40px 1px;
+  overflow-x: hidden;
+}
+.training_cards .training_card {
+  width: 480px;
+  height: 560px;
+  border-radius: 16px;
+  background: #fff;
+  z-index: 10000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.training_cards .training_card .card_image img {
+  width: 480px;
+  height: 220px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.training_cards .training_card .card_text {
+  margin: 32px;
+}
+.training_cards .training_card .card_text .card_title {
+  color: #0f1014;
+  font-size: 20px;
+  font-weight: 700;
+}
+.training_cards .training_card .card_text .mentors_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.training_cards .training_card .card_text .mentors_btn .mentors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 25px 4px 4px;
+  border-radius: 61px;
+  border: 1px solid #ebdfff;
+}
+.training_cards .training_card .card_text .mentors_btn .mentors .mentors_image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.training_cards .training_card .card_text .mentors_btn .mentors .mentor_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+.training_cards .training_card .card_text .mentors_btn .mentors .mentor_info .name {
+  color: #7b7f94;
+  font-size: 12px;
+  font-weight: 400;
+}
+.training_cards .training_card .card_text .mentors_btn .mentors .mentor_info .count {
+  color: #0f1014;
+  font-size: 16px;
+  font-weight: 700;
+}
+.training_cards .training_card .card_text .description {
+  color: #0f1014;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+}
+.training_cards .training_card .card_text .location {
+  color: #0f1014;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.training_cards .training_card .card_text .date_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.training_cards .training_card .card_text .date_btn .date_info {
+  display: flex;
+  padding: 5px 12px 5px 8px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+  border: 1px solid #ebdfff;
+}
+.training_cards .training_card .card_text .date_btn .date_info span {
+  color: #0f1014;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+}
+.training_cards .training_card .card_text .date_btn .btn {
+  color: #0f1014;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  padding: 80px 0;
+  margin-top: 120px;
+  border-bottom: 4px solid #7928fe;
+  background: #0f1014;
+}
+.footer .row {
+  margin-bottom: 40px;
+  color: #3e414e;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .row ul {
+  list-style: none;
+}
+.footer .row ul li a {
+  color: #fff;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+.footer .row,
+.footer .phone_clock,
+.footer .phone,
+.footer .clock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.footer .socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.footer .socials a {
+  margin-left: 16px;
+}/*# sourceMappingURL=style.css.map */

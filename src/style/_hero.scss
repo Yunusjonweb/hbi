@@ -1,0 +1,90 @@
+.hero {
+  .hero_info {
+    color: #0f1014;
+
+    .info_title {
+      font-size: 46px;
+      font-weight: 900;
+
+      span {
+        color: #7928fe;
+      }
+    }
+
+    .info_description {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 34px;
+    }
+
+    .info_buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+
+      a {
+        padding: 16px 28px;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 40px;
+        border: 1px solid #7928fe;
+        transition: 0.3s ease;
+
+        &:nth-child(2) {
+          margin-left: 16px;
+        }
+
+        &.active,
+        &:hover {
+          background-color: #7928fe;
+          color: #fff;
+        }
+
+        &.active {
+          &:hover {
+            background-color: #fff;
+            color: #7928fe;
+          }
+        }
+      }
+    }
+  }
+
+  .hero_image {
+    height: 530px;
+
+    &.img {
+      width: 100%;
+    }
+  }
+
+  .hero_counter {
+    margin-top: -60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .item_counter {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      border-bottom: 1px;
+      border-image: url("../assets/images/divider.svg");
+
+      .count {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 120%;
+      }
+
+      .name {
+        color: #7b7f94;
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+  }
+}

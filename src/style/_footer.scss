@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  padding: 80px 0;
+  margin-top: 120px;
+  border-bottom: 4px solid #7928fe;
+  background: #0f1014;
+
+  .row {
+    margin-bottom: 40px;
+    color: #3e414e;
+    font-size: 16px;
+    font-weight: 500;
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          color: #fff;
+          transition: all ease 0.3s;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .row,
+  .phone_clock,
+  .phone,
+  .clock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    a {
+      margin-left: 16px;
+    }
+  }
+}

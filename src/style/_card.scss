@@ -1,0 +1,118 @@
+.training_cards {
+  display: flex;
+  gap: 25px;
+  padding: 40px 1px;
+  overflow-x: hidden;
+
+  .training_card {
+    width: 480px;
+    height: 560px;
+    border-radius: 16px;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .card_image {
+      img {
+        width: 480px;
+        height: 220px;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+      }
+    }
+
+    .card_text {
+      margin: 32px;
+
+      .card_title {
+        color: #0f1014;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .mentors_btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        .mentors {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 4px 25px 4px 4px;
+          border-radius: 61px;
+          border: 1px solid #ebdfff;
+
+          .mentors_image {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+          }
+
+          .mentor_info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 50px;
+
+            .name {
+              color: #7b7f94;
+              font-size: 12px;
+              font-weight: 400;
+            }
+
+            .count {
+              color: #0f1014;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .description {
+        color: #0f1014;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 16px;
+      }
+
+      .location {
+        color: #0f1014;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 16px;
+      }
+
+      .date_btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        .date_info {
+          display: flex;
+          padding: 5px 12px 5px 8px;
+          align-items: center;
+          gap: 24px;
+          border-radius: 12px;
+          border: 1px solid #ebdfff;
+
+          span {
+            color: #0f1014;
+            text-align: right;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+
+        .btn {
+          color: #0f1014;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
